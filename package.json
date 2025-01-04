@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@tanstack/react-query": "^5.62.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
