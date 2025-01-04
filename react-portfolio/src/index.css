@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  
+}
+nav {
+  height: 8vh;
+  width: 100vw;
+  box-sizing: border-box;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-name-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 10%;
+}
+.name-top {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
+.navigation-link-container {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-right: 15%;
+  gap: 10%;
+  width: 50%;
+  height: auto;
+  font-size: clamp(.5rem, 2vw, 1rem);
+}
+.navigation-link:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 30%);
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Makes the link inherit the color of the surrounding text */
+}
+.hero-section {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.hero-section-big-div-1 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  
+}
+.hero-intro-text-div {
+  width: 80%;
+  margin-top: 10%;
+}
+.highlight {
+  background: linear-gradient(to right, #c299ff, #ff7f7f, #ffa64d);
+  -webkit-background-clip: text;
+  color: transparent; /* Hides the background behind the text */
+}
+.hero-intro-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(.5rem, 3rem, 3.6rem);
+}
+.hero-main-description-div {
+  margin-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  width: 80%;
+  color: hsl(0, 0%, 30%);
+  
+}
+.hero-section-btns-div {
+  height: 30%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  position: relative;
+  margin-top: 1%;
+}
+.hero-btn {
+  width: 20%;
+  height: 20%;
+  border: none;
+}
+#contact-btn {
+  z-index: 1000;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#resume-btn {
+  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.resume-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.close-resume-btn {
+  margin-top: 10px;
+}
+
+
+
+#resume-btn:hover {
+  cursor: pointer;
+  background: whitesmoke;
+}
+#hidden-btn {
+  position: absolute;
+  top: 2%;
+  left: 1.5%;
+  opacity: 0.6;
+  background: linear-gradient(to right, purple, red, orange);
+}
+.hero-section-big-div-2 {
+  height: 100%;
+  width: 40%;
+}
+
+.hero-img-div {
+  max-width: 75%;
+  max-height: 60%;
+  margin-top: 15%;
+
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1024px) {
+
+  .name-top {
+    font-size: 1.6rem;
+  }
+
+  .navigation-link-container {
+    margin-right: 10%;
+    gap: 10%;
+    font-size: 1.6rem;
+    width: 50%;
+    height: auto;
+  }
+  .hero-section {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-main-description-div {
+    margin-top: 2%;
+    width: 80%;
+  }
+  .hero-img-div {
+    width: 100%;
+    max-height: 35%;
+    margin-top: 45%;
+  }
+
+  .hero-btn {
+    width: 25%;
+    height: 15%;
+    border: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+
+  .navigation-link-container {
+    gap: 5%;
+  }
+  .hero-section {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-intro-text-div {
+    width: 80%;
+    margin-top: 30%;
+  }
+  .hero-section-btns-div {
+    margin-top: 2%;
+  }
+
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+.nav-name-container {
+  width: 50%;
+  margin-left: 6%;
+  
+}
+.navigation-link-container {
+ margin-right: 4%;
+  font-size: clamp(.5rem, 2vw, 1rem);
+}
+  .hero-intro-text {
+    font-size: clamp(1rem, 2.2rem, 2.5rem);
+    
+  }
+  .name-top {
+    font-size: clamp(.3rem, .8rem, 1rem)
+  }
+  .navigation-link-container {
+    font-size: clamp(.3rem, .7rem, 1rem)
+  }
+ 
+.hero-section {
+  height: 60vh;
+}
+  .hero-section-big-div-1 {
+    width: 60vw;
+    margin-top: 10%;
+  }
+  .hero-intro-text-div {
+   width: 100%;
+   margin-top: 0%;
+  }
+  .hero-main-description-div {
+    margin-top: 4%;
+    font-size: clamp(.7rem, .9rem, 1.2rem);
+    width: 100%;
+  }
+
+  .hero-section-big-div-2 {
+    height: 100%;
+    width: 40%;
+  }
+  .hero-img-div {
+    max-width: 95%;
+    max-height: 80%;
+    margin-top: 55%;
+    margin-left: 1%;
+  }
+  .hero-section-btns-div {
+    height: 30%;
+    width: 100%;
+    gap: 10%;
+    margin-top: 2%;
+
+  }
+  .hero-btn {
+    width: 40%;
+    height: 15%;
+    border: none;
+  }
+  #contact-btn {
+    font-size: .8rem;
+  }
+  #resume-btn {
+    font-size: .8rem;
+  }
+}
+
+
+
+

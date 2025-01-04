@@ -1,0 +1,135 @@
+.services-section {
+    height: 90vh;
+    width: 100vw;
+}
+
+.services-header-section {
+    width: 70%;
+    height: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.services-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.services-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    background: linear-gradient(to right, #c299ff, #ff7f7f, #ffa64d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-description-div {
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.services-description-text {
+    font-size: clamp(.5rem, 2.5rem, 3.3rem);
+}
+.all-cards-div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    gap: 5%;
+}
+.card-div {
+    border: 3px solid whitesmoke;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.icon-container {
+    height: 15%;
+}
+.card-icon {
+    font-size: 2.1rem;
+}
+
+.ul-services {
+    list-style-type: disc; /* Keeps the bullet points */
+    padding-left: .9rem; /* Adjust to align with the content */
+    margin: 0;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-description {
+    margin-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 30%);
+}
+.li {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+@media (max-width: 1024px) {
+    .services-title {
+        font-size: 2.8rem;
+    }
+    .all-cards-div {
+        width: 80%;
+        height: 50%;
+        margin: 0 auto;
+        gap: 5%;
+    }
+
+    .services-section {
+        height: 70vh;
+        width: 100vw;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+    .services-header-section {
+        display: flex;
+        align-items: start;
+        text-align: left;
+        width: 80%;
+    }
+    .services-description-div {
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+       
+    }
+
+    .services-section {
+        height: auto;
+    }
+    .services-title {
+        font-size: 1.8rem;
+    }
+    .services-description-text {
+        font-size: clamp(1rem, 2.2rem, 2.5rem);
+    }
+   
+    .all-cards-div {
+        margin-top: 5%;
+        margin-bottom: 10%;
+       flex-direction: column;
+    }
+    .card-div {
+      margin-top: 10%;
+    }
+
+}
